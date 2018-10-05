@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.co.fujixerox.sa.ion.views.Radio4ButtonItemView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/inputLayoutSection2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/parts_result_select" />
+
+        <RadioGroup
+            android:id="@+id/rg_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+
+                android:singleLine="true"
+                android:text="@string/result_fixed" />
+
+            <RadioButton
+                android:id="@+id/radioNot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:onClick="onRadioToggle"
+                android:singleLine="true"
+                android:text="@string/result_not_fixed" />
+
+            <RadioButton
+                android:id="@+id/radioNonRecurring"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:onClick="onRadioToggle"
+                android:singleLine="true"
+                android:text="@string/result_non_recurring" />
+
+            <RadioButton
+                android:id="@+id/radioUnknown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:ellipsize="end"
+                android:onClick="onRadioToggle"
+                android:singleLine="true"
+                android:text="@string/result_unknown" />
+        </RadioGroup>
+</LinearLayout>
+
+</jp.co.fujixerox.sa.ion.views.Radio4ButtonItemView>
+

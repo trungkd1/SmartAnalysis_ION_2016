@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="24dp" >
+
+    <TextView
+        android:id="@+id/title_after_recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/title_dialog_after_recording"
+        android:textSize="28sp" />
+    <ProgressBar
+        android:id="@+id/progress_after_recording"
+        android:layout_below="@+id/title_after_recording"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+    <include layout="@layout/controls_area"
+        android:id="@+id/controls_area"
+        android:layout_below="@+id/progress_after_recording"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/txt_explain_after_recording"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/controls_area"
+        android:layout_marginBottom="16dp"
+        android:text="@string/explain_after_recording"
+        android:textSize="@dimen/font_size_normal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_explain_after_recording"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_record_again"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/record_again"
+            android:textColor="#0099CC"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_begin_analysis"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/begin_analysis"
+            android:textColor="#0099CC"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_create_report"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/create_report"
+            android:textColor="#0099CC"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

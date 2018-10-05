@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.co.fujixerox.sa.ion.views.EditTextItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="15dp" >
+
+    <include android:id="@+id/layout_btn_barcode"
+        layout="@layout/item_barcode_layout"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/labelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColor="@color/item_label_text_color" >
+
+        <TextView
+            android:id="@+id/textViewItemLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@android:string/untitled" />
+
+        <ImageView
+            android:id="@+id/checkItemLabel"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/checked"
+            android:visibility="gone" />
+    </LinearLayout>
+    <!-- TEXT INPUT ITEM -->
+    <RelativeLayout
+        android:id="@+id/editTextItemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/editTextItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_item_bg"
+            android:imeOptions="actionNext"
+            android:inputType="textNoSuggestions"
+            android:minHeight="@dimen/item_height"
+            android:paddingLeft="@dimen/text_padding_left" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/ivTextValidChecked"
+            android:layout_width="@dimen/checked_icon_size"
+            android:layout_height="@dimen/checked_icon_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/check"
+            android:tint="@color/red_200"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/childLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+</jp.co.fujixerox.sa.ion.views.EditTextItemView>

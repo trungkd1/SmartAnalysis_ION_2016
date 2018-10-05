@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.co.fujixerox.sa.ion.views.AxisImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/img_analysis_result"
+    android:layout_width="match_parent"
+    android:layout_height="256dp"
+    android:layout_marginTop="5dp"
+    android:padding="24dp"
+    app:labelSeparation="10dp"
+    app:labelTextSize="14sp"
+    app:labelTextColor="@color/rgb_black"
+    app:labelX="@array/axis_horizontal8s"
+    app:labelY="@array/axis_vertical"
+    app:unitY="@string/khz"
+    app:unitX="@string/seconds"
+    app:axisColor="@color/rgb_black"
+    app:seekBarColor="@color/orange_500"
+    app:seekBarStrokeWidth="2dp"
+    app:seekBarPeriod="30"
+    app:selectAreaColor="@android:color/transparent"
+    app:selectAreaStrokeWidth="0dp"/>

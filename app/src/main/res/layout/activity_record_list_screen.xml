@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_dialog_select_audios"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/list_item_normal"
+            android:orientation="horizontal"
+            android:paddingLeft="24dp">
+
+            <jp.co.fujixerox.sa.ion.views.SelectAudioHeadingView
+                android:id="@+id/heading_recording_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+
+                <TextView
+                    android:id="@+id/txt_recording_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/recording_date"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/img_recording_date_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </jp.co.fujixerox.sa.ion.views.SelectAudioHeadingView>
+
+            <jp.co.fujixerox.sa.ion.views.SelectAudioHeadingView
+                android:id="@+id/heading_serial_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+
+                <TextView
+                    android:id="@+id/txt_serial_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/serial_number"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/img_serial_number_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </jp.co.fujixerox.sa.ion.views.SelectAudioHeadingView>
+
+            <jp.co.fujixerox.sa.ion.views.SelectAudioHeadingView
+                android:id="@+id/heading_productname"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+
+                <TextView
+                    android:id="@+id/txt_model_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/model_name"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/img_model_name_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </jp.co.fujixerox.sa.ion.views.SelectAudioHeadingView>
+
+            <jp.co.fujixerox.sa.ion.views.SelectAudioHeadingView
+                android:id="@+id/heading_audio_file_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.12">
+
+                <TextView
+                    android:id="@+id/txt_audio_file_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/audio_file_name"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/img_audio_file_name_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </jp.co.fujixerox.sa.ion.views.SelectAudioHeadingView>
+
+            <jp.co.fujixerox.sa.ion.views.SelectAudioHeadingView
+                android:id="@+id/heading_image_analysis"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.12">
+
+                <TextView
+                    android:id="@+id/txt_image_analysis"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/image_file_name"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/img_image_analysis_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </jp.co.fujixerox.sa.ion.views.SelectAudioHeadingView>
+
+            <jp.co.fujixerox.sa.ion.views.SelectAudioHeadingView
+                android:id="@+id/heading_report_fixresult"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+
+                <TextView
+                    android:id="@+id/txt_report_fix"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/parts_result"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/img_report_info_fix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+            </jp.co.fujixerox.sa.ion.views.SelectAudioHeadingView>
+
+            <jp.co.fujixerox.sa.ion.views.SelectAudioHeadingView
+                android:id="@+id/heading_delete_report"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.12" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <ToggleButton
+                android:id="@+id/btn_get_past_reports"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@android:drawable/btn_default"
+                android:checked="false"
+                android:layout_marginRight="20dp"
+                android:onClick="viewPastReports"
+                android:textOff="@string/show_past_reports"
+                android:textOn="@string/show_local_reports" />
+
+            <Button
+                android:id="@+id/btnSearchSN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:maxLines="1"
+                android:ellipsize="marquee"
+                style="@android:style/Widget.Button.Toggle"
+                android:background="@android:drawable/btn_default"
+                android:onClick="showSearchSNDialog"
+                android:text="@string/search_sn_report" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

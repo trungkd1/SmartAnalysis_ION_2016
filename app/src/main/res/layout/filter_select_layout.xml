@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/select_all"
+        android:id="@+id/cb_selectAll"
+        android:checked="true"
+        android:background="@drawable/list_item_bg"
+        android:paddingLeft="40dp"/>
+    <ListView
+        android:id="@+id/filterSelectList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

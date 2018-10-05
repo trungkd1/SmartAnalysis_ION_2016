@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="accent">#E040FB</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+
+    <color name="rgb_white">#FFFFFF</color>
+    <color name="item_label_text_color">#222222</color>
+    <color name="red_500">#F44336</color>
+    <color name="red_100">#FFCDD2</color>
+    <color name="rgb_black">#000000</color>
+    <color name="rgb_grey">#A0A0A0</color>
+    <color name="red_200">#EF9A9A</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="blue_500">#2196F3</color>
+
+    <!--NhamVD 2016/09/08: Color element of screen scan barcode-->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_border">#ffafed44</color>
+    <color name="actionbar_opacity">#33000000</color>
+</resources>

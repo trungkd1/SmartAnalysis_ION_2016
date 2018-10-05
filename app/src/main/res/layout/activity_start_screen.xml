@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btn_rec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:onClick="gotoRecordingScreen"
+        android:text="@string/rec"
+        android:textSize="@dimen/font_size_30sp"
+        android:layout_weight="1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:text="@string/rec_content"
+        android:textSize="@dimen/font_size_24sp"
+        android:layout_weight="1"
+        android:paddingTop="5dp"/>
+
+    <Button
+        android:id="@+id/btn_catalog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/catalog"
+        android:onClick="gotoCatalogScreen"
+        android:textSize="@dimen/font_size_30sp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/text_catalog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:text="@string/calalog_content"
+        android:textSize="@dimen/font_size_24sp"
+        android:layout_weight="1"
+        android:paddingTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="gotoAnalysisScreen"
+        android:text="@string/analysis"
+        android:textSize="@dimen/font_size_24sp"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/text_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:text="@string/analysis_content"
+        android:textSize="@dimen/font_size_20sp"
+        android:layout_weight="1"
+        android:paddingTop="5dp"/>
+
+    <Button
+        android:id="@+id/btn_report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/reports"
+        android:onClick="gotoReportScreen"
+        android:textSize="@dimen/font_size_24sp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/text_report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:text="@string/report_content"
+        android:textSize="@dimen/font_size_20sp"
+        android:layout_weight="1"
+        android:paddingTop="5dp"/>
+
+    <Button
+        android:id="@+id/btn_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/setting"
+        android:onClick="gotoSettingScreen"
+        android:textSize="@dimen/font_size_24sp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/text_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:text="@string/setting_content"
+        android:textSize="@dimen/font_size_20sp"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        />
+    </LinearLayout>
+</LinearLayout>

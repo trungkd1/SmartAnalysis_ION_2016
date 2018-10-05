@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context="jp.co.fujixerox.sa.ion.activities.AnalysisScreenActivity" >
+
+    <TextView
+        android:id="@+id/tvFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="@string/label_audio_file_name"
+        android:layout_alignParentTop="true"/>
+
+        <jp.co.fujixerox.sa.ion.views.AxisImageView
+            xmlns:app="http://schemas.android.com/apk/res/jp.co.fujixerox.sa.ion"
+            android:id="@+id/axisImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="24dp"
+            app:labelSeparation="10dp"
+            app:labelTextSize="14sp"
+            app:labelTextColor="@color/rgb_black"
+            app:labelX="@array/axis_horizontal8s"
+            app:labelY="@array/axis_vertical"
+            app:unitY="@string/khz"
+            app:unitX="@string/seconds"
+            app:axisColor="@color/rgb_black"
+            app:seekBarColor="@color/orange_500"
+            app:seekBarStrokeWidth="2dp"
+            app:seekBarPeriod="30"
+            app:selectAreaColor="@color/rgb_white"
+            app:selectAreaStrokeWidth="4dp"/>
+
+</RelativeLayout>

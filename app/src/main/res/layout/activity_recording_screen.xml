@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <jp.co.fujixerox.sa.ion.views.TimeLineView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/timeline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:currentMilestone="1"
+        app:lineThickness="3dp"
+        app:milestonesActiveColor="@color/red_500"
+        app:milestonesInactiveColor="@color/red_200"
+        app:milestonesLabels="@array/milestones"
+        app:milestonesTextColor="@color/rgb_black"
+        app:milestonesTextSeparation="10dp"
+        app:milestonesTextSize="14sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal"
+            android:layout_below="@+id/timeline"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/inputLayoutSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal"
+                android:id="@+id/areacells"/>
+                <Button
+                    android:id="@+id/btn_start_recording"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:onClick="startRecording"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/start_recording"
+                    android:textSize="@dimen/font_size_large" />
+            </LinearLayout>
+        </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+        <ImageButton  android:id="@+id/btn_show_compare_guide"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_info_outline_black_48dp"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:onClick="onClickShowHint"/>
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/infor_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!-- 07/09/2016 ION#9 FPT GiapMN END -->
+    </LinearLayout>
+</RelativeLayout>

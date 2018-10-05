@@ -1,0 +1,200 @@
+﻿{
+  "label": "機種グループ",
+  "formid": "productgroup",
+  "pattern": "SELECT",
+  "required": true,
+  "listvalue": [
+    {
+      "value": "DC5C2263",
+      "text": "DC V C2263",
+      "items": [
+        {
+          "label": "機種名",
+          "formid": "productname",
+          "pattern": "SELECT",
+          "required": true,
+          "listvalue": [
+            {
+              "value": "DC5C2263",
+              "text": "DC V C2263"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "value": "APDCXX70",
+      "text": "AP/DC IV CXX70",
+      "items": [
+        {
+          "label": "機種名",
+          "formid": "productname",
+          "pattern": "SELECT",
+          "required": true,
+          "listvalue": [
+            {
+              "value": "APDC4C2270",
+              "text": "AP/DC IV C2270"
+            },
+            {
+              "value": "APDC4C3370",
+              "text": "AP/DC IV C3370"
+            },
+            {
+              "value": "APDC4C4470",
+              "text": "AP/DC IV C4470"
+            },
+            {
+              "value": "APDC4C5570",
+              "text": "AP/DC IV C5570"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "value": "APDCXX75",
+      "text": "AP/DC IV CXX75",
+      "items": [
+        {
+          "label": "機種名",
+          "formid": "productname",
+          "pattern": "SELECT",
+          "required": true,
+          "listvalue": [
+            {
+              "value": "APDC4C2275",
+              "text": "AP/DC IV C2275"
+            },
+            {
+              "value": "APDC4C3375",
+              "text": "AP/DC IV C3375"
+            },
+            {
+              "value": "APDC4C4475",
+              "text": "AP/DC IV C4475"
+            },
+            {
+              "value": "APDC4C5575",
+              "text": "AP/DC IV C5575"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "value": "APDC5XX75",
+      "text": "AP/DC V CXX75",
+      "items": [
+        {
+          "label": "機種名",
+          "formid": "productname",
+          "pattern": "v",
+          "required": true,
+          "listvalue": [
+            {
+              "value": "APDC5C2275",
+              "text": "AP/DC V C2275"
+            },
+            {
+              "value": "APDC5C3375",
+              "text": "AP/DC V C3375"
+            },
+            {
+              "value": "APDC5C4475",
+              "text": "AP/DC V C4475"
+            },
+            {
+              "value": "APDC5C5575",
+              "text": "AP/DC V C5575"
+            },
+            {
+              "value": "APDC5C6675",
+              "text": "AP/DC V C6675"
+            },
+            {
+              "value": "AP5DCC7775",
+              "text": "AP/DC V C7775"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "value": "APDC5XX76",
+      "text": "AP/DC V CXX76",
+      "items": [
+        {
+          "label": "機種名",
+          "formid": "productname",
+          "pattern": "SELECT",
+          "required": true,
+          "listvalue": [
+            {
+              "value": "APDC5C2276",
+              "text": "AP/DC V C2276"
+            },
+            {
+              "value": "APDC5C3376",
+              "text": "AP/DC V C3376"
+            },
+            {
+              "value": "APDC5C4476",
+              "text": "AP/DC V C4476"
+            },
+            {
+              "value": "APDC5C5576",
+              "text": "AP/DC V C5576"
+            },
+            {
+              "value": "APDC5C6676",
+              "text": "AP/DC V C6676"
+            },
+            {
+              "value": "APDC5C7776",
+              "text": "AP/DC V C7776"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "value": "APDC6XX71",
+      "text": "AP/DC VI CXX71",
+      "items": [
+        {
+          "label": "機種名",
+          "formid": "productname",
+          "pattern": "SELECT",
+          "required": true,
+          "listvalue": [
+            {
+              "value": "APDC6C2271",
+              "text": "AP/DC VI C2271"
+            },
+            {
+              "value": "APDC6C3371",
+              "text": "AP/DC VI C3371"
+            },
+            {
+              "value": "APDC6C4471",
+              "text": "AP/DC VI C4471"
+            },
+            {
+              "value": "APDC6C5571",
+              "text": "AP/DC VI C5571"
+            },
+            {
+              "value": "APDC6C6671",
+              "text": "AP/DC VI C6671"
+            },
+            {
+              "value": "APDC6C6671",
+              "text": "AP/DC VI C7771"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

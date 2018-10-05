@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:background="@drawable/list_item_bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="205dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:text="@android:string/unknownName"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_ion_type"/>
+
+    <TextView
+        android:layout_width="205dp"
+        android:layout_height="match_parent"
+        android:text="@android:string/unknownName"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_ion_category"/>
+    <TextView
+        android:layout_width="205dp"
+        android:layout_height="match_parent"
+        android:text="@android:string/unknownName"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_ion_cause"/>
+    <TextView
+        android:layout_width="205dp"
+        android:layout_height="match_parent"
+        android:text="@android:string/unknownName"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_ion_color"/>
+</LinearLayout>

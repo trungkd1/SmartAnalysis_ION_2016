@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <jp.co.fujixerox.sa.ion.views.ViewPagerIndicator
+        android:id="@+id/pager_catalog_guide"
+        android:layout_above="@+id/lnt_indicator_catalog_guide"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:id="@+id/lnt_indicator_catalog_guide"
+        android:layout_above="@+id/btn_oke_catalog_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageButton
+        android:id="@+id/btn_oke_catalog_guide"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_black_48dp"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+﻿{
+  "top": [
+    {
+      "knowhow": "",
+      "referenceImage": "NormalSound_CentTray.jpg"
+    },
+    {
+      "knowhow": "",
+      "referenceImage": "NormalSound_Fin.jpg"
+    },
+    {
+      "knowhow": "",
+      "referenceImage": "NormalSound_MaxVol.jpg"
+    },
+    {
+      "knowhow": "",
+      "referenceImage": "NormalSound_MinVol.jpg"
+    }
+  ],
+  "bottom": [
+    {
+      "knowhow": "",
+      "referenceImage": "sampleNoise_01.jpg"
+    },
+    {
+      "knowhow": "",
+      "referenceImage": "sampleNoise_02.jpg"
+    },
+    {
+      "knowhow": "",
+      "referenceImage": "sampleNoise_03.jpg"
+    },
+    {
+      "knowhow": "",
+      "referenceImage": "sampleNoise_04.jpg"
+    }
+  ]
+}

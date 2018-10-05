@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fillForm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <jp.co.fujixerox.sa.ion.views.TimeLineView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/timeline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:currentMilestone="2"
+        app:lineThickness="3dp"
+        app:milestonesActiveColor="@color/red_500"
+        app:milestonesInactiveColor="@color/red_200"
+        app:milestonesLabels="@array/milestones"
+        app:milestonesTextColor="@color/rgb_black"
+        app:milestonesTextSeparation="10dp"
+        app:milestonesTextSize="14sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/inputLayoutSection2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <include
+                    android:id="@+id/cause_parts"
+                    layout="@layout/layout_cause_parts" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llImageAnalysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/label_analysis_result"
+                    android:textAllCaps="false" />
+
+                <include
+                    android:id="@+id/analysis_view_area"
+                    layout="@layout/analysis_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="256dp" />
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/btn_play_original_audio"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:background="@drawable/play_stop_button"
+                        android:textOff=""
+                        android:textOn="" />
+
+                    <ImageButton
+                        android:id="@+id/ib_volumn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onClickVolume"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_volume_up_black_48dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/analysis_view_area"
+                layout="@layout/analysis_layout"
+                android:layout_width="match_parent"
+                android:layout_height="256dp" />
+
+            <LinearLayout
+                android:id="@+id/areacells"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" />
+
+            <Button
+                android:id="@+id/btn_finish"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:gravity="center"
+                android:onClick="finishReport"
+                android:padding="20dp"
+                android:text="@string/sendrep" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

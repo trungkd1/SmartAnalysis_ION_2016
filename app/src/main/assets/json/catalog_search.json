@@ -1,0 +1,350 @@
+﻿[
+  {
+    "label": "機種グループ",
+    "formid": "productgroup",
+    "pattern": "SELECT",
+    "required": true,
+    "listvalue": [
+      {
+        "value": "DC5C2263",
+        "text": "DC V C2263",
+        "items": [
+          {
+            "label": "機種名",
+            "formid": "productname",
+            "pattern": "SELECT",
+            "required": true,
+            "listvalue": [
+              {
+                "value": "DC5C2263",
+                "text": "DC V C2263"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "APDCXX70",
+        "text": "AP/DC IV CXX70",
+        "items": [
+          {
+            "label": "機種名",
+            "formid": "productname",
+            "pattern": "SELECT",
+            "required": true,
+            "listvalue": [
+              {
+                "value": "APDC4C2270",
+                "text": "AP/DC IV C2270"
+              },
+              {
+                "value": "APDC4C3370",
+                "text": "AP/DC IV C3370"
+              },
+              {
+                "value": "APDC4C4470",
+                "text": "AP/DC IV C4470"
+              },
+              {
+                "value": "APDC4C5570",
+                "text": "AP/DC IV C5570"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "APDCXX75",
+        "text": "AP/DC IV CXX75",
+        "items": [
+          {
+            "label": "機種名",
+            "formid": "productname",
+            "pattern": "SELECT",
+            "required": true,
+            "listvalue": [
+              {
+                "value": "APDC4C2275",
+                "text": "AP/DC IV C2275"
+              },
+              {
+                "value": "APDC4C3375",
+                "text": "AP/DC IV C3375"
+              },
+              {
+                "value": "APDC4C4475",
+                "text": "AP/DC IV C4475"
+              },
+              {
+                "value": "APDC4C5575",
+                "text": "AP/DC IV C5575"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "APDC5XX75",
+        "text": "AP/DC V CXX75",
+        "items": [
+          {
+            "label": "機種名",
+            "formid": "productname",
+            "pattern": "SELECT",
+            "required": true,
+            "listvalue": [
+              {
+                "value": "APDC5C2275",
+                "text": "AP/DC V C2275"
+              },
+              {
+                "value": "APDC5C3375",
+                "text": "AP/DC V C3375"
+              },
+              {
+                "value": "APDC5C4475",
+                "text": "AP/DC V C4475"
+              },
+              {
+                "value": "APDC5C5575",
+                "text": "AP/DC V C5575"
+              },
+              {
+                "value": "APDC5C6675",
+                "text": "AP/DC V C6675"
+              },
+              {
+                "value": "APDC5C7775",
+                "text": "AP/DC V C7775"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "APDC5XX76",
+        "text": "AP/DC V CXX76",
+        "items": [
+          {
+            "label": "機種名",
+            "formid": "productname",
+            "pattern": "SELECT",
+            "required": true,
+            "listvalue": [
+              {
+                "value": "APDC5C2276",
+                "text": "AP/DC V C2276"
+              },
+              {
+                "value": "APDC5C3376",
+                "text": "AP/DC V C3376"
+              },
+              {
+                "value": "APDC5C4476",
+                "text": "AP/DC V C4476"
+              },
+              {
+                "value": "APDC5C5576",
+                "text": "AP/DC V C5576"
+              },
+              {
+                "value": "APDC5C6676",
+                "text": "AP/DC V C6676"
+              },
+              {
+                "value": "APDC5C7776",
+                "text": "AP/DC V C7776"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "value": "APDC6XX71",
+        "text": "AP/DC VI CXX71",
+        "items": [
+          {
+            "label": "機種名",
+            "formid": "productname",
+            "pattern": "SELECT",
+            "required": true,
+            "listvalue": [
+              {
+                "value": "APDC6C2271",
+                "text": "AP/DC VI C2271"
+              },
+              {
+                "value": "APDC6C3371",
+                "text": "AP/DC VI C3371"
+              },
+              {
+                "value": "APDC6C4471",
+                "text": "AP/DC VI C4471"
+              },
+              {
+                "value": "APDC6C5571",
+                "text": "AP/DC VI C5571"
+              },
+              {
+                "value": "APDC6C6671",
+                "text": "AP/DC VI C6671"
+              },
+              {
+                "value": "APDC6C6671",
+                "text": "AP/DC VI C7771"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "原因パーツ",
+    "formid": "cause",
+    "pattern": "SELECT",
+    "placeholder": "原因パーツを選択",
+    "required": false,
+    "listvalue": [
+      {
+        "value": "Drum",
+        "text": "Drum"
+      },
+      {
+        "value": "Deve",
+        "text": "Deve"
+      },
+      {
+        "value": "FusingUnit",
+        "text": "FusingUnit"
+      },
+      {
+        "value": "IBTUnit",
+        "text": "IBTUnit"
+      },
+      {
+        "value": "PH",
+        "text": "PH"
+      },
+      {
+        "value": "WasteBox",
+        "text": "WasteBox"
+      },
+      {
+        "value": "DADF",
+        "text": "DADF"
+      },
+      {
+        "value": "Tray",
+        "text": "Tray"
+      },
+      {
+        "value": "Finisher",
+        "text": "Finisher"
+      }
+
+    ]
+  },
+  {
+    "label": "異音種類",
+    "formid": "type",
+    "pattern": "SELECT",
+    "placeholder": "異音種類を選択",
+    "required": false,
+    "listvalue": [
+      {
+        "value": "ShortPeriodicNoise",
+        "text": "短周期音"
+      },
+      {
+        "value": "ContinuousNoise",
+        "text": "連続音"
+      },
+      {
+        "value": "OneShotNoise",
+        "text": "単発音"
+      },
+      {
+        "value": "IrregularNoise",
+        "text": "不規則音"
+      },
+      {
+        "value": "NormalSound",
+        "text": "正常音"
+      }
+    ]
+  },
+  {
+    "label": "擬音表現カテゴリ",
+    "formid": "category",
+    "pattern": "SELECT",
+    "placeholder": "擬音表現カテゴリを選択",
+    "required": false,
+    "listvalue": [
+      {
+        "value": "カリカリ",
+        "text": "カリカリ"
+      },
+      {
+        "value": "ガタガタ",
+        "text": "ガタガタ"
+      },
+      {
+        "value": "カチカチ",
+        "text": "カチカチ"
+      },
+      {
+        "value": "キュルキュル",
+        "text": "キュルキュル"
+      },
+      {
+        "value": "キュッキュッ",
+        "text": "キュッキュッ"
+      },
+      {
+        "value": "キーキー",
+        "text": "キーキー"
+      },
+      {
+        "value": "キッキッ",
+        "text": "キッキッ"
+      },
+      {
+        "value": "キーン",
+        "text": "キーン"
+      },
+      {
+        "value": "チリチリ",
+        "text": "チリチリ"
+      },
+      {
+        "value": "チャッチャッ",
+        "text": "チャッチャッ"
+      },
+      {
+        "value": "バリバリ",
+        "text": "バリバリ"
+      },
+      {
+        "value": "ピーー",
+        "text": "ピーー"
+      },
+      {
+        "value": "プーー",
+        "text": "プーー"
+      },
+      {
+        "value": "ピヨピヨ",
+        "text": "ピヨピヨ"
+      },
+      {
+        "value": "ヒュルヒュル",
+        "text": "ヒュルヒュル"
+      },
+      {
+        "value": "ウォンウォン",
+        "text": "ウォンウォン"
+      }
+    ]
+  }
+]

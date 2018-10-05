@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerInParent="true"
+    android:gravity="center_horizontal">
+
+    <jp.co.fujixerox.sa.ion.views.TimeLineView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/timeline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:currentMilestone="2"
+        app:lineThickness="3dp"
+        app:milestonesActiveColor="@color/red_500"
+        app:milestonesInactiveColor="@color/red_200"
+        app:milestonesLabels="@array/milestones_analysis_phone"
+        app:milestonesTextColor="@color/rgb_black"
+        app:milestonesTextSeparation="10dp"
+        app:milestonesTextSize="14sp" />
+
+    <include
+        android:id="@+id/analysis_view_area"
+        layout="@layout/analysis_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/timeline"
+        android:layout_above="@+id/setting_area" />
+
+    <RelativeLayout
+        android:layout_above="@+id/layout_guide"
+        android:id="@+id/setting_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/boder_setting_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/border_setting_area"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_analysis"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:background="@android:color/transparent"
+                android:onClick="onClickAnalysis"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_graphic_eq_black_48dp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ib_setting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:background="@android:color/transparent"
+                android:onClick="onClickSetting"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_build_black_48dp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ib_stop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:background="@android:color/transparent"
+                android:onClick="stopWAV"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_stop_black_48dp" />
+
+            <ToggleButton
+                android:id="@+id/ib_play"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:background="@drawable/play_pause_button"
+                android:onClick="onClickPlayOrPause"
+                android:textOff=""
+                android:textOn="" />
+
+            <ImageButton
+                android:id="@+id/ib_record_again"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="0.14"
+                android:background="@android:color/transparent"
+                android:onClick="onClickRecordAgain"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_fiber_manual_record_black_48dp"
+                android:tint="@color/red_500" />
+
+            <ImageButton
+                android:id="@+id/ib_volumn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="0.14"
+                android:background="@android:color/transparent"
+                android:onClick="onClickVolume"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_volume_up_black_48dp" />
+
+            <ImageButton
+                android:id="@+id/ib_compare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:background="@android:color/transparent"
+                android:onClick="onClickCompare"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_compare_black_48dp" />
+            <!--<ImageButton-->
+            <!--android:id="@+id/ib_list"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="40dp"-->
+            <!--android:layout_weight="0.14"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:onClick="onClickShowAudiosList"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:src="@drawable/ic_queue_music_black_48dp"-->
+            <!--android:visibility="gone" />-->
+            <TextView
+                android:layout_toRightOf="@+id/boder_setting_area"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size"
+                android:layout_marginLeft="5dp"
+                android:text="@string/infor_compare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_gravity="right"
+            android:id="@+id/btn_show_analysis_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClickShowHint"
+            android:src="@drawable/ic_info_outline_black_48dp"
+            android:text="@string/show_hint" />
+        07/09/2016 ION#9 FPT GiapMN START
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/infor_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!-- 07/09/2016 ION#9 FPT GiapMN END -->
+    </LinearLayout>
+</RelativeLayout>

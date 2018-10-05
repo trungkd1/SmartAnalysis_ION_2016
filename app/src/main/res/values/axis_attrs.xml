@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AxisImageView">
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="labelTextColor" format="color" />
+        <attr name="labelSeparation" format="dimension" />
+        <attr name="axisThickness" format="dimension" />
+        <attr name="axisColor" format="color" />
+        <attr name="labelX" format="reference" />
+        <attr name="labelY" format="reference" />
+        <attr name="unitX" format="reference" />
+        <attr name="unitY" format="reference" />
+        <attr name="seekBarColor" format="color" />
+        <attr name="seekBarPeriod" format="integer" />
+        <attr name="seekBarStrokeWidth" format="dimension" />
+        <attr name="selectAreaColor" format="color" />
+        <attr name="selectAreaStrokeWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="TimeLineView">
+        <attr name="milestonesActiveColor" format="color" />
+        <attr name="milestonesInactiveColor" format="color" />
+        <attr name="milestonesLabels" format="reference" />
+        <attr name="lineThickness" format="dimension" />
+        <attr name="currentMilestone" format="integer" />
+        <attr name="milestonesTextSize" format="dimension" />
+        <attr name="milestonesTextColor" format="color" />
+        <attr name="milestonesTextSeparation" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="BarcodeScannerView">
+        <attr name="shouldScaleToFill" format="boolean" />
+    </declare-styleable>
+</resources>

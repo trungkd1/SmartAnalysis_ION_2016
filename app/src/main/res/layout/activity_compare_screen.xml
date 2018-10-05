@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+
+    <jp.co.fujixerox.sa.ion.views.TimeLineView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/timeline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:currentMilestone="3"
+        app:lineThickness="3dp"
+        app:milestonesActiveColor="@color/red_500"
+        app:milestonesInactiveColor="@color/red_200"
+        app:milestonesLabels="@array/milestones"
+        app:milestonesTextColor="@color/rgb_black"
+        app:milestonesTextSeparation="10dp"
+        app:milestonesTextSize="14sp" />
+
+    <ScrollView
+        android:id="@+id/layout_compare"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_below="@+id/timeline"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:splitMotionEvents="false"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fragment_analysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name">
+
+                <include layout="@layout/catalog_loading" />
+
+                <FrameLayout
+                    android:id="@+id/fragment_catalog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/layoutProcessButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/btn_method_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:onClick="onButtonClick"
+                android:text="@string/process_detail" />
+
+            <Button
+                android:id="@+id/btn_method_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:onClick="onButtonClick"
+                android:text="@string/process_confirm" />
+
+            <Button
+                android:id="@+id/btn_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="70dp"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:onClick="onButtonClick"
+                android:text="@string/create_report" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btn_volume"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/transparent"
+                android:onClick="onClickVolume"
+                android:src="@drawable/ic_volume_up_black_48dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

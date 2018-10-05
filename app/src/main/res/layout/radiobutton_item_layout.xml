@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.co.fujixerox.sa.ion.views.RadioButtonItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
+
+    <LinearLayout
+        android:id="@+id/labelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColor="@color/item_label_text_color">
+
+        <TextView
+            android:id="@+id/textViewItemLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@android:string/untitled" />
+
+        <ImageView
+            android:id="@+id/checkItemLabel"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/checked"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- BOOL ITEM -->
+    <RelativeLayout
+        android:id="@+id/radioGroupItemTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:gravity="center_vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroupItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_item_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="30dp">
+
+            <RadioButton
+                android:id="@+id/radioYes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/radioNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/no" />
+        </RadioGroup>
+        <!-- 丸チェックアイコン（必須入力済みのときに表示する） -->
+        <ImageView
+            android:id="@+id/ivRadioChecked"
+            android:layout_width="@dimen/checked_icon_size"
+            android:layout_height="@dimen/checked_icon_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/check"
+            android:tint="@color/red_200"
+            android:visibility="gone" />
+    </RelativeLayout>
+</jp.co.fujixerox.sa.ion.views.RadioButtonItemView>
